@@ -1,0 +1,3 @@
+spring.application.name=demo
+gemini.api.url=https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
+gemini.api.key=AIzaSyDX3xlI8cQJGZ9Lhx-pu59uMvJlnyo__i0

@@ -1,0 +1,10 @@
+package com.ai;
+
+public class QnaService {
+
+	public String getAnswer(String question) {
+		// TODO Auto-generated method stub
+		return "";
+	}
+
+}

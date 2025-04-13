@@ -1,0 +1,29 @@
+<!-- Main Header -->
+<!-- <header class="main-header">
+  <h1>AuraAI</h1>
+</header> -->
+
+
+<div class="chat-wrapper">
+  <div class="chat-container">
+
+
+
+    <div class="chat-window" #chatWindow>
+      <div *ngFor="let message of messages"
+        [ngClass]="{'user-message': message.sender === 'User', 'bot-message': message.sender === 'Bot'}">
+        <span>{{ message.text }}</span>
+      </div>
+
+      <!-- Typing Loader -->
+      <div *ngIf="loading" class="typing-loader">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" [(ngModel)]="userInput" placeholder="Type a message..." (keydown.enter)="sendMessage()">
+      <button (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>

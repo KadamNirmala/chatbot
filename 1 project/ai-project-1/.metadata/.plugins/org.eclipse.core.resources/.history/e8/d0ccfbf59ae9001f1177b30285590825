@@ -1,0 +1,14 @@
+package com.ai;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class QnaService {
+
+	
+	public String getAnswer(String question) {
+		// TODO Auto-generated method stub
+		return "";
+	}
+
+}
